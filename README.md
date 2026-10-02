@@ -22,6 +22,12 @@ Pick any Virginia school division and see nine years of public federal data in f
 
 File: [`division-brief.html`](https://brendanbartanen-svg.github.io/k12-ai-examples/division-brief.html)
 
+## Slides
+
+The slides from the talk, as a PDF (25 slides, about 1 MB).
+
+File: [`innovation-with-guardrails-slides.pdf`](https://brendanbartanen-svg.github.io/k12-ai-examples/innovation-with-guardrails-slides.pdf)
+
 ## Guardrails
 
 Each page makes no network requests, stores nothing, and runs no AI when it is used. Nothing about a student or user leaves the device.
