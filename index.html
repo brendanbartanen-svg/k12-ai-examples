@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>K-12 AI Examples</title>
+<meta name="description" content="Two examples from Brendan Bartanen's talk Innovation with Guardrails to the UVA K-12 Advisory Council, October 2, 2026.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #55585f;
+    --card: #f6f6f8;
+    --border: #d9dbe0;
+    --navy: #232D4B;
+    --orange: #E57200;
+    --link: #232D4B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171d;
+      --fg: #ececf0;
+      --muted: #a4a8b3;
+      --card: #1f222b;
+      --border: #363a46;
+      --navy: #8fa0d6;
+      --orange: #f0923a;
+      --link: #c5cff2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+  }
+  header { border-top: 5px solid var(--orange); padding-top: 24px; margin-bottom: 28px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 10px; color: var(--navy); }
+  .lede { margin: 0; color: var(--muted); }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 0 0 32px; }
+  @media (min-width: 600px) { .cards { grid-template-columns: 1fr 1fr; } }
+  .card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--navy);
+    border-radius: 8px;
+    padding: 18px 18px 16px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .card:hover, .card:focus-visible { border-left-color: var(--orange); outline: none; }
+  .card h2 { font-size: 1.2rem; margin: 0 0 6px; color: var(--navy); }
+  .card p { margin: 0 0 10px; }
+  .card .meta { font-size: 0.9rem; color: var(--muted); margin: 0; }
+  .card .open { color: var(--link); text-decoration: underline; }
+  h3 { font-size: 1.05rem; margin: 28px 0 8px; color: var(--navy); }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>K-12 AI Examples</h1>
+    <p class="lede">Two examples from Brendan Bartanen's talk "Innovation with Guardrails" to the UVA K-12 Advisory Council (Virginia school superintendents), October 2, 2026. They illustrate what a person can build with current AI coding tools.</p>
+  </header>
+
+  <div class="cards">
+    <a class="card" href="newtons-lab.html">
+      <h2>Newton's Lab</h2>
+      <p>A 3D student lab on Newton's three laws, rebuilt from the files Brendan taught from as an 8th-grade science teacher and aligned to Virginia SOL PS.8. Three stations, each with predict, test, explain; a 10-question check; teacher notes; English and Spanish.</p>
+      <p class="meta">One HTML file, about 1.5 MB. Runs offline. <span class="open">Open the lab</span></p>
+    </a>
+    <a class="card" href="division-brief.html">
+      <h2>Division Brief</h2>
+      <p>Pick any Virginia school division and see nine years of public federal data in five panels: enrollment, students, child poverty, teachers, and revenue and spending per student. No test scores.</p>
+      <p class="meta">One HTML file, about 320 KB. Runs offline. <span class="open">Open the brief</span></p>
+    </a>
+  </div>
+
+  <h3>About</h3>
+  <p>Both pages were built by an AI coding tool (Claude Code) under Brendan's direction on September 30 and October 1, 2026. Each page makes no network requests, stores nothing, and runs no AI when it is used. Nothing about a student or user leaves the device. To use them, open the links above, or download either HTML file and double-click it.</p>
+
+  <h3>Caveats</h3>
+  <p>These are demonstrations, not finished curriculum or official data products.</p>
+  <ul>
+    <li>The Division Brief's figures were computed by an AI-written script that checks its totals against the federal division files (NCES Common Core of Data, Census SAIPE, NCES/Census F-33). They have not been checked against Virginia Department of Education reports, and federal counts can differ from state reports.</li>
+    <li>Newton's Lab has not been reviewed by a physics teacher or a Spanish-speaking teacher, and it has not been classroom-tested.</li>
+  </ul>
+
+  <footer>
+    <p>© 2026 Brendan Bartanen, University of Virginia. Questions can go through <a href="https://github.com/brendanbartanen-svg/k12-ai-examples/issues">GitHub issues</a> on the <a href="https://github.com/brendanbartanen-svg/k12-ai-examples">repo</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
